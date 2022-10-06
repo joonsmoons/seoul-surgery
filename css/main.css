@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "NanumBarunGothic";
+  src: url("../fonts/NanumBarunGothic.eot");
+  src: url("../fonts/NanumBarunGothic.eot") format("embedded-opentype"),
+    url("../fonts/NanumBarunGothic.woff") format("woff");
+}
+
+header,
+main,
+footer {
+  /* border: 1px red solid; */
+}
+
+body {
+  margin: 0;
+  font-family: "NanumBarunGothic", "serif";
+}
+
+.main-container {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    /* the gradient on top, adjust color and opacity to your taste */
+      url("../images/doctor.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 92vh;
+}
+
+#main-slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-size: 2.1rem;
+  gap: 10px;
+  height: 60vh;
+  margin: 0 auto;
+  user-select: none;
+}
+
+.navigation-container > ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.navigation-item {
+  font-size: 1.2rem;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  margin: auto 0;
+}
+
+.navigation-item:hover {
+  color: #b28b84;
+  top: -3px;
+  border-bottom: 1px solid #b28b84;
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-item {
+    display: none;
+  }
+}
+
+#main-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  height: 2rem;
+}
+
+#main-menu > div {
+  /* three items */
+  border: 1px solid black;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.main-menu-item {
+  font-size: 1.3em;
+  height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  margin: 0 2rem;
+  white-space: nowrap;
+}
+
+#business-number {
+  font-size: 1rem;
+  color: grey;
+}
+
+.main-menu-item:hover {
+  cursor: pointer;
+}
+
+.main-bulletin {
+  margin: 0 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
