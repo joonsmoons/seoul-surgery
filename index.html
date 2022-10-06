@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seoul Surgery</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link href="https://css.gg/menu-boxed.css" rel="stylesheet" />
+    <link href="https://css.gg/shape-triangle.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -15,11 +17,84 @@
             <li>
               <a href="#"><img src="./images/logo_01.gif" alt="사이트홈" /></a>
             </li>
-            <li class="navigation-item">병원소개</li>
-            <li class="navigation-item">건강정보</li>
-            <li class="navigation-item">종합검진</li>
-            <li class="navigation-item">상담실</li>
+            <li class="navigation-item" id="introduction">
+              병원소개
+              <div class="sub-navigation-div">
+                <object
+                  type="image/svg+xml"
+                  data="./images/triangle-svgrepo-com.svg"
+                  class="triangle-icon"
+                ></object>
+
+                <ul class="sub-navigation-list">
+                  <li class="sub-navigation-item"></li>
+                  <li class="sub-navigation-item">인사말</li>
+                  <li class="sub-navigation-item">의료진 소개</li>
+                  <li class="sub-navigation-item">병원시설 안내</li>
+                  <li class="sub-navigation-item">진료 안내</li>
+                  <li class="sub-navigation-item">찾아오시는길</li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation-item">
+              건강정보
+              <div class="sub-navigation-div">
+                <object
+                  type="image/svg+xml"
+                  data="./images/triangle-svgrepo-com.svg"
+                  class="triangle-icon"
+                ></object>
+
+                <ul class="sub-navigation-list">
+                  <li class="sub-navigation-item"></li>
+                  <li class="sub-navigation-item">대장내시경</li>
+                  <li class="sub-navigation-item">3대 항문병</li>
+                  <li class="sub-navigation-item">정맥류</li>
+                  <li class="sub-navigation-item">대장암</li>
+                  <li class="sub-navigation-item">변비</li>
+                  <li class="sub-navigation-item">과민성</li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation-item">
+              종합검진
+              <div class="sub-navigation-div">
+                <object
+                  type="image/svg+xml"
+                  data="./images/triangle-svgrepo-com.svg"
+                  class="triangle-icon"
+                ></object>
+
+                <ul class="sub-navigation-list">
+                  <li class="sub-navigation-item"></li>
+                  <li class="sub-navigation-item">
+                    국민건강보험공단 <br />검진안내
+                  </li>
+                  <li class="sub-navigation-item">(일반)건강검진</li>
+                  <li class="sub-navigation-item">암검진</li>
+                  <li class="sub-navigation-item">생애전환기 건강진단</li>
+                  <li class="sub-navigation-item">영유아 건강검진</li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation-item">
+              상담실
+              <div class="sub-navigation-div sub-navigation-div-qna">
+                <object
+                  type="image/svg+xml"
+                  data="./images/triangle-svgrepo-com.svg"
+                  class="triangle-icon"
+                ></object>
+
+                <ul class="sub-navigation-list">
+                  <li class="sub-navigation-item"></li>
+                  <li class="sub-navigation-item">베스트 질문과 답변</li>
+                  <li class="sub-navigation-item">온라인 상담실</li>
+                </ul>
+              </div>
+            </li>
             <li class="navigation-item">찾아오시는길</li>
+            <i class="gg-menu-boxed navigation-menu-icon"></i>
           </ul>
         </section>
       </nav>
@@ -39,8 +114,40 @@
         </section>
       </section>
       <section class="main-bulletin">
-        <section id="main-bulletin-notice"><h2>공지사항</h2></section>
-        <section id="main-bulletin-faq"><h2>자주물어보는질물(FAQ)</h2></section>
+        <section class="bulletin-item bulletin-notice">
+          <h2>공지사항</h2>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+              similique!
+            </li>
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore,
+              inventore.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe,
+              recusandae.
+            </li>
+          </ul>
+        </section>
+        <section class="bulletin-item bulletin-faq">
+          <h2>자주하는 질문(FAQ)</h2>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+              similique!
+            </li>
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore,
+              inventore.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe,
+              recusandae.
+            </li>
+          </ul>
+        </section>
       </section>
     </main>
     <footer>some footer</footer>
